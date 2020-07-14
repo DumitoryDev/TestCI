@@ -30,3 +30,19 @@
 *.exe
 *.out
 *.app
+
+#Builddirs:
+BuildHost
+BuildTarget
+BuildVersion/Version.h
+cmake-build-*
+build
+
+#metafiles from IDEs
+.idea
+.project
+
+#log files
+*.log
+
+
