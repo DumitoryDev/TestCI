@@ -1,0 +1,16 @@
+dist: xenial
+language: cpp
+compiler:
+  - clang
+  - gcc
+script:
+  - cmake .
+  - cmake --build .
+  - cmake --build . --target package
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - bash deploy.sh
+  on:
+    all_branches: true
